@@ -13,7 +13,7 @@ services:
   telegraf:
     image: telegraf:1.14
     volumes:
-      - ./etc/telegraf.conf:/etc/telegraf/telegraf.conf
+      - ./etc/telegraf:/etc/telegraf
       - ./mibs:/usr/share/snmp/mibs
     ports:
       - "8092:8092/udp"
